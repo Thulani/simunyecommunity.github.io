@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F5F6F1;
+  --surface: #FFFFFF;
+  --surface-tint: #ECEEE7;
+  --cobalt: #2540E8;
+  --cobalt-deep: #121E6B;
+  --cobalt-mid: #4E63EE;
+  --accent: #FF3E7F;
+  --ink: #10131A;
+  --ink-dim: #565F6E;
+  --radius: 16px;
+}
+
+@theme {
+  --color-cobalt: #2540E8;
+  --color-cobalt-deep: #121E6B;
+  --color-cobalt-mid: #4E63EE;
+  --color-accent: #FF3E7F;
+  --color-surface-tint: #ECEEE7;
+  --color-ink: #10131A;
+  --color-ink-dim: #565F6E;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-display: 'Archivo Black', sans-serif;
+  --font-family-mono: 'Space Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* Mono utility */
+.mono {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Prose styles for markdown content */
+.prose {
+  max-width: 720px;
+  line-height: 1.75;
+  color: var(--ink-dim);
+}
+
+.prose h1 { font-size: 2rem; font-weight: 400; margin: 1.5rem 0 0.75rem; color: var(--cobalt-deep); font-family: 'Archivo Black', sans-serif; }
+.prose h2 { font-size: 1.5rem; font-weight: 400; margin: 1.5rem 0 0.5rem; color: var(--cobalt-deep); font-family: 'Archivo Black', sans-serif; }
+.prose h3 { font-size: 1.25rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: var(--ink); font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0; }
+.prose p { margin: 0.875rem 0; }
+.prose ul { list-style: disc; padding-left: 1.5rem; margin: 0.875rem 0; }
+.prose ol { list-style: decimal; padding-left: 1.5rem; margin: 0.875rem 0; }
+.prose li { margin: 0.25rem 0; }
+.prose strong { font-weight: 600; color: var(--ink); }
+.prose a { color: var(--cobalt-mid); text-decoration: underline; }
+.prose blockquote { border-left: 4px solid var(--cobalt-mid); padding-left: 1rem; margin: 1rem 0; font-style: italic; color: var(--ink-dim); }
+.prose code { background: #F3F4F6; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.875rem; }
+.prose pre { background: var(--cobalt-deep); color: #F9FAFB; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
+.prose hr { border-color: rgba(16,19,26,0.1); margin: 2rem 0; }
+.prose img { max-width: 100%; border-radius: 0.5rem; margin: 1rem 0; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.prose th { background: var(--surface-tint); padding: 0.5rem 0.75rem; text-align: left; font-weight: 600; font-size: 0.875rem; border: 1px solid rgba(16,19,26,0.1); }
+.prose td { padding: 0.5rem 0.75rem; font-size: 0.875rem; border: 1px solid rgba(16,19,26,0.08); }
+
+/* Card heading reset — Archivo Black can be too loud in cards */
+.card-heading {
+  font-family: 'Inter', sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+/* ---------- PHOTO STACK ---------- */
+.photo-stack {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto;
+  height: 420px;
+}
+
+.photo-card {
+  position: absolute;
+  width: 148px;
+  background: #fff;
+  padding: 8px 8px 26px 8px;
+  border-radius: 3px;
+  box-shadow: 0 14px 28px -8px rgba(16,19,26,0.3);
+  transform: rotate(var(--r));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card.large { width: 176px; }
+
+.photo-card .frame {
+  width: 100%;
+  aspect-ratio: 5/4;
+  border-radius: 2px;
+  background: linear-gradient(150deg, #4E63EE, #121E6B);
+  display: block;
+  object-fit: cover;
+}
+
+.photo-card .frame.alt {
+  background: linear-gradient(150deg, #7C88F2, #2540E8);
+}
+
+/* Real photo inside card */
+.photo-card img.frame {
+  background: none;
+}
+
+.photo-card .card-label {
+  display: block;
+  margin-top: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: #565F6E;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo-stack:hover .photo-card {
+  transform: rotate(var(--r)) translateY(-10px);
+  box-shadow: 0 22px 36px -8px rgba(16,19,26,0.35);
+}
+
+@media (max-width: 900px) {
+  .photo-stack { height: 340px; margin-bottom: 50px; max-width: 440px; }
+  .photo-card { width: 118px; }
+  .photo-card.large { width: 140px; }
+}
+
+@media (max-width: 520px) {
+  .photo-stack { height: 290px; max-width: 320px; }
+  .photo-card { width: 96px; padding: 6px 6px 20px 6px; }
+  .photo-card.large { width: 112px; }
+  .photo-card .card-label { font-size: 0.52rem; margin-top: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-card { transition: none; }
+}
+
+/* ---------- TRANSVERSE LINE ---------- */
+.transverse-line {
+  border-top: 1px solid rgba(16,19,26,0.12);
+}
+
+.transverse-line .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 28px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.transverse-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.66rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #565F6E;
+}
+
+.transverse-label.right {
+  color: #2540E8;
+}
