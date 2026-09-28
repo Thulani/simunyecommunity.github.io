@@ -20,16 +20,16 @@ export default function Button({
   }
 
   const variants = {
-    primary: 'text-white hover:opacity-90 focus:ring-[#2540E8]',
-    outline: 'border-2 hover:bg-[#ECEEE7] focus:ring-[#2540E8]',
-    accent: 'text-white hover:opacity-90 focus:ring-[#FF3E7F]',
-    ghost: 'hover:bg-[#ECEEE7] focus:ring-[#2540E8]',
+    primary: 'text-white hover:opacity-90 focus:ring-[#6B2D5C]',
+    outline: 'border-2 hover:bg-[#ECEEE7] focus:ring-[#6B2D5C]',
+    accent: 'text-[#3B1633] hover:opacity-90 focus:ring-[#E0A43A]',
+    ghost: 'hover:bg-[#ECEEE7] focus:ring-[#6B2D5C]',
   }
 
   const variantStyles = {
-    primary: { background: '#2540E8' },
-    outline: { borderColor: '#2540E8', color: '#2540E8' },
-    accent: { background: '#FF3E7F' },
+    primary: { background: '#6B2D5C' },
+    outline: { borderColor: '#6B2D5C', color: '#6B2D5C' },
+    accent: { background: '#E0A43A' },
     ghost: { color: '#565F6E' },
   }
 

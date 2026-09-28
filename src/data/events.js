@@ -1,75 +1,28 @@
+// Updated manually by team admin — weekly training details from @simunye_community
+const TRAINING_VENUE = 'Discovery Sports Park, Parkmore, Sandton'
+
+const trainingDates = ['2026-09-30', '2026-10-07', '2026-10-14', '2026-10-21', '2026-10-28']
+
+const training = trainingDates.map((date, i) => ({
+  id: i + 1,
+  type: 'practice',
+  title: 'Wednesday Training',
+  date,
+  time: '18:00',
+  venue: TRAINING_VENUE,
+  description: 'Our weekly session, led by a certified coach. All ages, genders and skill levels welcome — new faces especially.',
+}))
+
 const events = [
+  ...training,
   {
-    id: 1,
-    type: 'practice',
-    title: 'Weekly Training Session',
-    date: '2026-07-05',
-    time: '08:00 – 10:00',
-    venue: 'Sandton Sports Club, Field 2',
-    description: 'Our regular Saturday morning session — all abilities welcome. Arrive five minutes early for a warm-up.',
-  },
-  {
-    id: 2,
-    type: 'clinic',
-    title: 'Shooting Clinic with Coach Nandi',
-    date: '2026-07-09',
-    time: '18:30 – 20:00',
-    venue: 'Sandton City Indoor Courts',
-    description: 'A focused Wednesday evening session on attacking play and shooting technique. Bring a water bottle.',
-  },
-  {
-    id: 3,
-    type: 'friendly',
-    title: 'Friendly vs Rosebank Rockets',
-    date: '2026-07-12',
-    time: '09:00 – 12:00',
-    venue: 'Hyde Park Community Centre',
-    description: 'Our first friendly of the second half of the year. Spectators welcome — bring your loudest support.',
-  },
-  {
-    id: 4,
-    type: 'practice',
-    title: 'Weekly Training Session',
-    date: '2026-07-19',
-    time: '08:00 – 10:00',
-    venue: 'Sandton Sports Club, Field 2',
-    description: 'Regular Saturday session. Focus this week: defensive positioning and intercepts.',
-  },
-  {
-    id: 5,
-    type: 'clinic',
-    title: 'Fitness & Conditioning Workshop',
-    date: '2026-07-23',
-    time: '18:30 – 20:00',
-    venue: 'The Zone @ Rosebank',
-    description: 'Work with our biokineticist on sport-specific conditioning — footwork, agility ladders, and core strength.',
-  },
-  {
-    id: 6,
-    type: 'practice',
-    title: 'Weekly Training Session',
-    date: '2026-07-26',
-    time: '08:00 – 10:00',
-    venue: 'Sandton Sports Club, Field 2',
-    description: 'Regular Saturday session. New players especially welcome this week.',
-  },
-  {
-    id: 7,
-    type: 'friendly',
-    title: 'Corporate Networker Match vs Melrose Arch FC',
-    date: '2026-08-02',
-    time: '10:00 – 14:00',
-    venue: 'Melrose Arch Piazza Courts',
-    description: 'Our flagship summer networker event. Followed by a sponsored lunch — register your spot with team admin.',
-  },
-  {
-    id: 8,
-    type: 'practice',
-    title: 'Weekly Training Session',
-    date: '2026-06-14',
-    time: '08:00 – 10:00',
-    venue: 'Sandton Sports Club, Field 2',
-    description: 'Past session — well attended with great energy from the new cohort.',
+    id: 100,
+    type: 'tournament',
+    title: 'Simunye Women\'s Month Netball Tournament',
+    date: '2026-08-29',
+    time: '09:00 – 13:00',
+    venue: TRAINING_VENUE,
+    description: 'Our first ever tournament — four teams, one court, a bring & braai, and a charity drive for two women\'s shelters.',
   },
 ]
 

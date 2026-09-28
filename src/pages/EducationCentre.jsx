@@ -167,12 +167,12 @@ export default function EducationCentre() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             Education Centre
           </p>
@@ -202,7 +202,7 @@ export default function EducationCentre() {
                   className="w-full text-left flex items-center gap-3 px-4 py-3 rounded-full text-sm font-medium transition-all"
                   style={
                     active === section.id
-                      ? { background: '#2540E8', color: '#fff' }
+                      ? { background: '#6B2D5C', color: '#fff' }
                       : { color: '#565F6E' }
                   }
                   onMouseEnter={e => {
@@ -239,11 +239,11 @@ function CourtDiagram() {
   return (
     <div
       className="mb-8 rounded-2xl overflow-hidden p-6"
-      style={{ background: '#ECEEE7', border: '1px solid rgba(37,64,232,0.12)' }}
+      style={{ background: '#ECEEE7', border: '1px solid rgba(107,45,92,0.12)' }}
     >
       <h3
         className="text-sm font-bold uppercase tracking-wider mb-4 mono"
-        style={{ color: '#2540E8', fontFamily: "'Space Mono', monospace", fontSize: '0.7rem', letterSpacing: '2px' }}
+        style={{ color: '#6B2D5C', fontFamily: "'Space Mono', monospace", fontSize: '0.7rem', letterSpacing: '2px' }}
       >
         Court Zones
       </h3>
@@ -253,42 +253,42 @@ function CourtDiagram() {
         aria-label="Netball court diagram showing player zones"
       >
         {/* Court background */}
-        <rect x="10" y="10" width="280" height="500" rx="4" fill="#ffffff" stroke="#2540E8" strokeWidth="2" />
+        <rect x="10" y="10" width="280" height="500" rx="4" fill="#ffffff" stroke="#6B2D5C" strokeWidth="2" />
 
         {/* Third lines */}
-        <line x1="10" y1="177" x2="290" y2="177" stroke="#2540E8" strokeWidth="1.5" strokeDasharray="6,3" />
-        <line x1="10" y1="343" x2="290" y2="343" stroke="#2540E8" strokeWidth="1.5" strokeDasharray="6,3" />
+        <line x1="10" y1="177" x2="290" y2="177" stroke="#6B2D5C" strokeWidth="1.5" strokeDasharray="6,3" />
+        <line x1="10" y1="343" x2="290" y2="343" stroke="#6B2D5C" strokeWidth="1.5" strokeDasharray="6,3" />
 
         {/* Shooting circles */}
-        <path d="M 80 10 A 120 120 0 0 1 220 10" fill="none" stroke="#4E63EE" strokeWidth="1.5" />
-        <path d="M 80 510 A 120 120 0 0 0 220 510" fill="none" stroke="#4E63EE" strokeWidth="1.5" />
+        <path d="M 80 10 A 120 120 0 0 1 220 10" fill="none" stroke="#8C4A7A" strokeWidth="1.5" />
+        <path d="M 80 510 A 120 120 0 0 0 220 510" fill="none" stroke="#8C4A7A" strokeWidth="1.5" />
 
         {/* Centre circle */}
-        <circle cx="150" cy="260" r="24" fill="none" stroke="#2540E8" strokeWidth="1.5" />
-        <circle cx="150" cy="260" r="3" fill="#2540E8" />
+        <circle cx="150" cy="260" r="24" fill="none" stroke="#6B2D5C" strokeWidth="1.5" />
+        <circle cx="150" cy="260" r="3" fill="#6B2D5C" />
 
         {/* GS */}
-        <rect x="110" y="30" width="80" height="26" rx="13" fill="#2540E8" />
+        <rect x="110" y="30" width="80" height="26" rx="13" fill="#6B2D5C" />
         <text x="150" y="48" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">GS</text>
 
         {/* GK */}
-        <rect x="110" y="463" width="80" height="26" rx="13" fill="#121E6B" />
+        <rect x="110" y="463" width="80" height="26" rx="13" fill="#3B1633" />
         <text x="150" y="481" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">GK</text>
 
         {/* GA */}
-        <rect x="55" y="88" width="80" height="26" rx="13" fill="#4E63EE" />
+        <rect x="55" y="88" width="80" height="26" rx="13" fill="#8C4A7A" />
         <text x="95" y="106" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">GA</text>
 
         {/* GD */}
-        <rect x="165" y="404" width="80" height="26" rx="13" fill="#4E63EE" />
+        <rect x="165" y="404" width="80" height="26" rx="13" fill="#8C4A7A" />
         <text x="205" y="422" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">GD</text>
 
         {/* WA */}
-        <rect x="165" y="88" width="80" height="26" rx="13" fill="#FF3E7F" />
+        <rect x="165" y="88" width="80" height="26" rx="13" fill="#E0A43A" />
         <text x="205" y="106" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">WA</text>
 
         {/* WD */}
-        <rect x="55" y="404" width="80" height="26" rx="13" fill="#FF3E7F" />
+        <rect x="55" y="404" width="80" height="26" rx="13" fill="#E0A43A" />
         <text x="95" y="422" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">WD</text>
 
         {/* C */}
@@ -303,9 +303,9 @@ function CourtDiagram() {
 
       <div className="mt-4 flex flex-wrap gap-2 justify-center text-xs">
         {[
-          { color: '#2540E8', label: 'Shooting positions (GS, GK)' },
-          { color: '#4E63EE', label: 'Attack/Defence (GA, GD)' },
-          { color: '#FF3E7F', label: 'Wing positions (WA, WD)' },
+          { color: '#6B2D5C', label: 'Shooting positions (GS, GK)' },
+          { color: '#8C4A7A', label: 'Attack/Defence (GA, GD)' },
+          { color: '#E0A43A', label: 'Wing positions (WA, WD)' },
           { color: '#10131A', label: 'Centre (C)' },
         ].map((item) => (
           <span key={item.label} className="flex items-center gap-1.5" style={{ color: '#565F6E' }}>

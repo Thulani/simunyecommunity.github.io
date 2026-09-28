@@ -4,20 +4,20 @@
   --bg: #F5F6F1;
   --surface: #FFFFFF;
   --surface-tint: #ECEEE7;
-  --cobalt: #2540E8;
-  --cobalt-deep: #121E6B;
-  --cobalt-mid: #4E63EE;
-  --accent: #FF3E7F;
+  --cobalt: #6B2D5C;
+  --cobalt-deep: #3B1633;
+  --cobalt-mid: #8C4A7A;
+  --accent: #E0A43A;
   --ink: #10131A;
   --ink-dim: #565F6E;
   --radius: 16px;
 }
 
 @theme {
-  --color-cobalt: #2540E8;
-  --color-cobalt-deep: #121E6B;
-  --color-cobalt-mid: #4E63EE;
-  --color-accent: #FF3E7F;
+  --color-cobalt: #6B2D5C;
+  --color-cobalt-deep: #3B1633;
+  --color-cobalt-mid: #8C4A7A;
+  --color-accent: #E0A43A;
   --color-surface-tint: #ECEEE7;
   --color-ink: #10131A;
   --color-ink-dim: #565F6E;
@@ -132,13 +132,13 @@ h1, h2, h3 {
   width: 100%;
   aspect-ratio: 5/4;
   border-radius: 2px;
-  background: linear-gradient(150deg, #4E63EE, #121E6B);
+  background: linear-gradient(150deg, #8C4A7A, #3B1633);
   display: block;
   object-fit: cover;
 }
 
 .photo-card .frame.alt {
-  background: linear-gradient(150deg, #7C88F2, #2540E8);
+  background: linear-gradient(150deg, #B27FA5, #6B2D5C);
 }
 
 /* Real photo inside card */
@@ -203,5 +203,5 @@ h1, h2, h3 {
 }
 
 .transverse-label.right {
-  color: #2540E8;
+  color: #6B2D5C;
 }

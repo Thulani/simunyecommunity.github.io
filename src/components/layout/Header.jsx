@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import { SHOW_CORPORATE_HUB } from '../../config/features'
 
 const navLinks = [
   { to: '/about', label: 'About' },
@@ -7,7 +8,7 @@ const navLinks = [
   { to: '/gallery', label: 'Gallery' },
   { to: '/news', label: 'News' },
   { to: '/education', label: 'Education' },
-  { to: '/corporate-hub', label: 'Corporate Hub' },
+  ...(SHOW_CORPORATE_HUB ? [{ to: '/corporate-hub', label: 'Corporate Hub' }] : []),
   { to: '/sponsors', label: 'Sponsors' },
   { to: '/contact', label: 'Contact' },
 ]
@@ -31,10 +32,10 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-2.5">
             <img
               src={`${import.meta.env.BASE_URL}simunye-logo.png`}
-              alt="Simunye Netball Hub"
+              alt="Simunye Netball Community"
               className="h-9 w-auto object-contain"
             />
-            <span style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: '1.05rem', letterSpacing: '0.5px', color: '#2540E8' }}>
+            <span style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: '1.05rem', letterSpacing: '0.5px', color: '#6B2D5C' }}>
               Simunye
             </span>
           </Link>
@@ -54,7 +55,7 @@ export default function Header() {
                 }
                 style={({ isActive }) =>
                   isActive
-                    ? { background: '#2540E8', color: '#fff' }
+                    ? { background: '#6B2D5C', color: '#fff' }
                     : { color: '#565F6E' }
                 }
               >
@@ -68,14 +69,14 @@ export default function Header() {
             <Link
               to="/contact?type=join"
               className="px-5 py-2 text-sm font-bold rounded-full border-2 transition-all"
-              style={{ borderColor: '#2540E8', color: '#2540E8' }}
+              style={{ borderColor: '#6B2D5C', color: '#6B2D5C' }}
             >
               Join Us
             </Link>
             <Link
               to="/contact?type=sponsor"
-              className="px-5 py-2 text-sm font-bold rounded-full text-white transition-all hover:opacity-90"
-              style={{ background: '#FF3E7F' }}
+              className="px-5 py-2 text-sm font-bold rounded-full text-[#3B1633] transition-all hover:opacity-90"
+              style={{ background: '#E0A43A' }}
             >
               Sponsor Us
             </Link>
@@ -117,7 +118,7 @@ export default function Header() {
               }
               style={({ isActive }) =>
                 isActive
-                  ? { background: '#2540E8', color: '#fff' }
+                  ? { background: '#6B2D5C', color: '#fff' }
                   : { color: '#565F6E' }
               }
               onClick={() => setMenuOpen(false)}
@@ -129,15 +130,15 @@ export default function Header() {
             <Link
               to="/contact?type=join"
               className="block text-center px-4 py-2 text-sm font-bold rounded-full border-2"
-              style={{ borderColor: '#2540E8', color: '#2540E8' }}
+              style={{ borderColor: '#6B2D5C', color: '#6B2D5C' }}
               onClick={() => setMenuOpen(false)}
             >
               Join Us
             </Link>
             <Link
               to="/contact?type=sponsor"
-              className="block text-center px-4 py-2 text-sm font-bold rounded-full text-white"
-              style={{ background: '#FF3E7F' }}
+              className="block text-center px-4 py-2 text-sm font-bold rounded-full text-[#3B1633]"
+              style={{ background: '#E0A43A' }}
               onClick={() => setMenuOpen(false)}
             >
               Sponsor Us

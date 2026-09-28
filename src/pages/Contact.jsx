@@ -23,7 +23,7 @@ const initialState = {
 }
 
 const inputClass = 'w-full rounded-xl px-4 py-3 text-sm bg-white focus:outline-none focus:ring-2'
-const inputStyle = { border: '1px solid rgba(16,19,26,0.12)', '--tw-ring-color': '#2540E8' }
+const inputStyle = { border: '1px solid rgba(16,19,26,0.12)', '--tw-ring-color': '#6B2D5C' }
 
 export default function Contact() {
   const [searchParams] = useSearchParams()
@@ -77,7 +77,7 @@ export default function Contact() {
             type="button"
             onClick={() => setStatus('idle')}
             className="px-6 py-3 text-sm font-bold rounded-full text-white transition-all hover:opacity-90"
-            style={{ background: '#2540E8' }}
+            style={{ background: '#6B2D5C' }}
           >
             Send another message
           </button>
@@ -94,12 +94,12 @@ export default function Contact() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             Get in Touch
           </p>
@@ -195,7 +195,7 @@ export default function Contact() {
             {isFriendly && (
               <div
                 className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 rounded-xl"
-                style={{ background: '#ECEEE7', border: '1px solid rgba(37,64,232,0.12)' }}
+                style={{ background: '#ECEEE7', border: '1px solid rgba(107,45,92,0.12)' }}
               >
                 <div>
                   <label className="block text-sm font-semibold mb-2" style={{ color: '#10131A' }} htmlFor="preferredDate">
@@ -233,7 +233,7 @@ export default function Contact() {
             {isSponsor && (
               <div
                 className="p-4 rounded-xl"
-                style={{ background: '#ECEEE7', border: '1px solid rgba(37,64,232,0.12)' }}
+                style={{ background: '#ECEEE7', border: '1px solid rgba(107,45,92,0.12)' }}
               >
                 <label className="block text-sm font-semibold mb-2" style={{ color: '#10131A' }} htmlFor="budget">
                   Indicative budget range (optional)
@@ -292,7 +292,7 @@ export default function Contact() {
               type="submit"
               disabled={status === 'submitting'}
               className="w-full py-4 text-base font-bold rounded-full text-white transition-all hover:opacity-90 disabled:opacity-60"
-              style={{ background: '#2540E8' }}
+              style={{ background: '#6B2D5C' }}
             >
               {status === 'submitting' ? 'Sending...' : 'Send message'}
             </button>

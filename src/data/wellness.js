@@ -7,7 +7,7 @@ const wellnessPosts = [
     title: 'Why Sport Is the Best Corporate Networking Tool You\'re Not Using',
     date: '2026-06-10',
     summary: 'Formal networking events are stressful, transactional, and easy to skip. Playing a sport together is none of those things. Here\'s why corporate sport is your most underrated professional asset.',
-    coverImage: 'https://placehold.co/800x400/2540E8/ffffff?text=Corporate+Networking',
+    coverImage: 'https://placehold.co/800x400/6B2D5C/ffffff?text=Corporate+Networking',
     isSample: true,
     content: `## The Problem with Formal Networking
 
@@ -41,7 +41,7 @@ The court is the icebreaker. The relationship is what you build after.
     title: 'The Corporate Athlete\'s Guide to Recovery',
     date: '2026-05-28',
     summary: 'You train hard and work hard. Recovery is the part most professionals skip — and the part that determines how much you get from both. A practical guide for busy professionals.',
-    coverImage: 'https://placehold.co/800x400/4E63EE/ffffff?text=Recovery+Guide',
+    coverImage: 'https://placehold.co/800x400/8C4A7A/ffffff?text=Recovery+Guide',
     isSample: true,
     content: `## The Part Nobody Talks About
 

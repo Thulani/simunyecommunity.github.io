@@ -26,12 +26,12 @@ export default function CorporateHub() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             Corporate Hub
           </p>
@@ -101,7 +101,7 @@ export default function CorporateHub() {
                 className="px-4 py-1.5 rounded-full text-sm font-medium transition-all border"
                 style={
                   activeIndustry === industry
-                    ? { background: '#2540E8', color: '#fff', borderColor: '#2540E8' }
+                    ? { background: '#6B2D5C', color: '#fff', borderColor: '#6B2D5C' }
                     : { background: '#fff', borderColor: 'rgba(16,19,26,0.12)', color: '#565F6E' }
                 }
               >
@@ -119,7 +119,7 @@ export default function CorporateHub() {
                   key={player.id}
                   className="bg-white rounded-2xl p-5 flex gap-4 items-start hover:shadow-sm transition-all"
                   style={{ border: '1px solid rgba(16,19,26,0.08)' }}
-                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(37,64,232,0.25)'}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(107,45,92,0.25)'}
                   onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(16,19,26,0.08)'}
                 >
                   <img
@@ -141,7 +141,7 @@ export default function CorporateHub() {
                           rel="noopener noreferrer"
                           className="shrink-0 transition-colors"
                           style={{ color: '#565F6E' }}
-                          onMouseEnter={e => (e.currentTarget).style.color = '#2540E8'}
+                          onMouseEnter={e => (e.currentTarget).style.color = '#6B2D5C'}
                           onMouseLeave={e => (e.currentTarget).style.color = '#565F6E'}
                           aria-label={`${player.name} on LinkedIn`}
                         >
@@ -190,7 +190,7 @@ export default function CorporateHub() {
                 to={`/corporate-hub/wellness/${post.slug}`}
                 className="group rounded-2xl overflow-hidden bg-white hover:shadow-md transition-all"
                 style={{ border: '1px solid rgba(16,19,26,0.08)' }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(37,64,232,0.25)'}
+                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(107,45,92,0.25)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(16,19,26,0.08)'}
               >
                 <img
@@ -206,7 +206,7 @@ export default function CorporateHub() {
                   <h3
                     className="text-lg mb-2 card-heading transition-colors"
                     style={{ color: '#10131A' }}
-                    onMouseEnter={e => (e.currentTarget).style.color = '#2540E8'}
+                    onMouseEnter={e => (e.currentTarget).style.color = '#6B2D5C'}
                     onMouseLeave={e => (e.currentTarget).style.color = '#10131A'}
                   >
                     {post.title}
@@ -214,7 +214,7 @@ export default function CorporateHub() {
                   <p className="text-sm leading-relaxed" style={{ color: '#565F6E' }}>{post.summary}</p>
                   <span
                     className="mt-4 inline-flex items-center text-sm font-bold"
-                    style={{ color: '#2540E8' }}
+                    style={{ color: '#6B2D5C' }}
                   >
                     Read more <span className="ml-1 group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
                   </span>
@@ -230,7 +230,7 @@ export default function CorporateHub() {
         <div className="max-w-xl mx-auto">
           <h2 className="text-2xl mb-4" style={{ color: '#10131A' }}>Join the network.</h2>
           <p className="mb-6" style={{ color: '#565F6E' }}>
-            Whether you're looking for new professional connections or just a great Saturday morning — Simunye delivers both.
+            Whether you're looking for new professional connections or just a great Wednesday evening — Simunye delivers both.
           </p>
           <Button to="/contact?type=join" variant="primary" size="lg">
             Register Your Interest

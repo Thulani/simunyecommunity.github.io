@@ -19,6 +19,8 @@ const typeLabel = {
   practice: 'Practice',
   clinic: 'Clinic',
   friendly: 'Friendly',
+  tournament: 'Tournament',
+  social: 'Social',
 }
 
 const upcomingEvents = events
@@ -35,12 +37,12 @@ export default function Schedule() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             Schedule
           </p>
@@ -49,7 +51,7 @@ export default function Schedule() {
             className="text-lg leading-relaxed"
             style={{ color: 'rgba(255,255,255,0.85)', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}
           >
-            Practices, clinics, and friendlies — all in one place.
+            Wednesday training, tournaments, and the adventures in between — all in one place.
           </p>
         </div>
       </section>
@@ -74,7 +76,7 @@ export default function Schedule() {
                   key={event.id}
                   className="rounded-2xl bg-white p-6 hover:shadow-sm transition-all"
                   style={{ border: '1px solid rgba(16,19,26,0.08)' }}
-                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(37,64,232,0.25)'}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(107,45,92,0.25)'}
                   onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(16,19,26,0.08)'}
                 >
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-3">

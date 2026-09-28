@@ -35,6 +35,7 @@ export default function NewsPost() {
           src={post.coverImage}
           alt={post.title}
           className="w-full h-full object-cover"
+          style={{ objectPosition: post.coverPosition }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
       </div>
@@ -43,7 +44,7 @@ export default function NewsPost() {
       <article className="max-w-3xl mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <nav className="mb-6 text-sm" style={{ color: '#565F6E' }}>
-          <Link to="/news" className="hover:underline" style={{ color: '#4E63EE' }}>News</Link>
+          <Link to="/news" className="hover:underline" style={{ color: '#8C4A7A' }}>News</Link>
           <span className="mx-2">/</span>
           <span style={{ color: '#565F6E' }} className="truncate">{post.title}</span>
         </nav>
@@ -66,7 +67,7 @@ export default function NewsPost() {
         </div>
 
         <div className="mt-12 pt-8" style={{ borderTop: '1px solid rgba(16,19,26,0.08)' }}>
-          <Link to="/news" className="text-sm font-bold hover:underline" style={{ color: '#2540E8' }}>
+          <Link to="/news" className="text-sm font-bold hover:underline" style={{ color: '#6B2D5C' }}>
             &larr; Back to all news
           </Link>
         </div>

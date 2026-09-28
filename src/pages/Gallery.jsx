@@ -23,12 +23,12 @@ export default function Gallery() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             Gallery
           </p>
@@ -55,7 +55,7 @@ export default function Gallery() {
               <button
                 key={item.id}
                 type="button"
-                className="block w-full break-inside-avoid overflow-hidden rounded-xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2540E8]"
+                className="block w-full break-inside-avoid overflow-hidden rounded-xl group cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#6B2D5C]"
                 onClick={() => openLightbox(i)}
                 aria-label={`View photo: ${item.caption}`}
               >

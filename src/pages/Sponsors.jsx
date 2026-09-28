@@ -6,14 +6,14 @@ const statCards = [
   { label: 'Active Players', value: teamStats.activePlayers, icon: '🏃' },
   { label: 'Companies Represented', value: teamStats.companiesRepresented, icon: '🏢' },
   { label: 'Sessions / Month', value: teamStats.sessionsPerMonth, icon: '📅' },
-  { label: 'Years Active', value: teamStats.yearsActive, icon: '⭐' },
+  { label: 'Founded', value: teamStats.founded, icon: '⭐' },
 ]
 
 const valueProps = [
   {
     icon: '👥',
     title: 'A high-value professional audience',
-    desc: 'Our players are working professionals from Sandton\'s leading finance, law, tech, and consulting firms — a premium demographic that is genuinely difficult to reach through conventional advertising.',
+    desc: 'Our members are working professionals from across Sandton\'s corporate community — an engaged, active audience that shows up every single week.',
   },
   {
     icon: '🤝',
@@ -22,13 +22,13 @@ const valueProps = [
   },
   {
     icon: '🌍',
-    title: 'Community impact',
-    desc: 'Simunye gives professionals from different backgrounds a shared space. A sponsorship here is visible community investment — not just a logo placement.',
+    title: 'Real community impact',
+    desc: 'We\'re a registered NPO that gives back — like our Women\'s Month charity drive for two women\'s shelters. Sponsorship here is visible community investment, not just a logo placement.',
   },
   {
     icon: '📲',
     title: 'Digital presence',
-    desc: 'Your brand features on this website, in our social content, and in our player communications — reaching a growing audience of Sandton professionals and their networks.',
+    desc: 'We actively market our team and build our brand online. Your brand features on this website, on our Instagram, and at our tournaments and events.',
   },
 ]
 
@@ -38,12 +38,12 @@ export default function Sponsors() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             Sponsorship
           </p>
@@ -54,7 +54,7 @@ export default function Sponsors() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: 'rgba(255,255,255,0.85)', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}
           >
-            Simunye offers sponsors rare access to a concentrated, high-value professional community in the heart of Sandton. This isn't traditional sports sponsorship — it's strategic brand placement in a genuine B2B network.
+            Simunye is a registered, self-funded NPO bringing together a growing community of Sandton professionals through netball. Partner with us to empower people through sport, promote healthy lifestyles, and uplift the communities we serve.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button to="/contact?type=sponsor" variant="accent" size="lg">
@@ -75,7 +75,7 @@ export default function Sponsors() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-4" style={{ background: '#121E6B' }}>
+      <section className="py-16 px-4" style={{ background: '#3B1633' }}>
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {statCards.map((stat) => (
@@ -89,7 +89,7 @@ export default function Sponsors() {
                 </p>
                 <p
                   className="text-sm mt-1"
-                  style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', fontSize: '0.72rem', letterSpacing: '1px' }}
+                  style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', fontSize: '0.72rem', letterSpacing: '1px' }}
                 >
                   {stat.label}
                 </p>
@@ -114,7 +114,7 @@ export default function Sponsors() {
                 key={item.title}
                 className="rounded-2xl bg-white p-7 hover:shadow-sm transition-all"
                 style={{ border: '1px solid rgba(16,19,26,0.08)' }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(37,64,232,0.25)'}
+                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(107,45,92,0.25)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(16,19,26,0.08)'}
               >
                 <div className="text-3xl mb-4">{item.icon}</div>
@@ -144,7 +144,7 @@ export default function Sponsors() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold rounded-full border-2 transition-all"
-              style={{ borderColor: '#2540E8', color: '#2540E8' }}
+              style={{ borderColor: '#6B2D5C', color: '#6B2D5C' }}
               onMouseEnter={e => (e.currentTarget).style.background = '#ECEEE7'}
               onMouseLeave={e => (e.currentTarget).style.background = 'transparent'}
             >
@@ -157,7 +157,7 @@ export default function Sponsors() {
       {/* CTA Banner */}
       <section
         className="py-20 px-4 text-center text-white"
-        style={{ background: '#2540E8' }}
+        style={{ background: '#6B2D5C' }}
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl mb-4" style={{ color: '#fff' }}>Ready to get involved?</h2>

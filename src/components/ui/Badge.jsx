@@ -1,14 +1,16 @@
 const typeColors = {
-  practice: { background: '#ECEEE7', color: '#2540E8' },
-  clinic: { background: '#EEF2FF', color: '#2540E8' },
-  friendly: { background: '#FFF0F6', color: '#FF3E7F' },
-  Finance: { background: '#EEF2FF', color: '#2540E8' },
+  practice: { background: '#ECEEE7', color: '#6B2D5C' },
+  clinic: { background: '#F6ECF3', color: '#6B2D5C' },
+  friendly: { background: '#FBF0DA', color: '#8A5A0A' },
+  tournament: { background: '#FBF0DA', color: '#8A5A0A' },
+  social: { background: '#F6ECF3', color: '#8C4A7A' },
+  Finance: { background: '#F6ECF3', color: '#6B2D5C' },
   Law: { background: '#F3E8FF', color: '#7C3AED' },
-  Tech: { background: '#EEF2FF', color: '#4E63EE' },
+  Tech: { background: '#F6ECF3', color: '#8C4A7A' },
   Consulting: { background: '#FEF9C3', color: '#854D0E' },
-  Insurance: { background: '#FFF0F6', color: '#FF3E7F' },
+  Insurance: { background: '#FBF0DA', color: '#8A5A0A' },
   Energy: { background: '#FFF7ED', color: '#C2410C' },
-  Marketing: { background: '#FFF0F6', color: '#9D174D' },
+  Marketing: { background: '#FBF0DA', color: '#9D174D' },
   Other: { background: '#ECEEE7', color: '#565F6E' },
 }
 

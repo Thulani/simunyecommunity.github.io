@@ -37,7 +37,7 @@ export default function WellnessPost() {
 
       <article className="max-w-3xl mx-auto px-4 py-12">
         <nav className="mb-6 text-sm" style={{ color: '#565F6E' }}>
-          <Link to="/corporate-hub" className="hover:underline" style={{ color: '#4E63EE' }}>Corporate Hub</Link>
+          <Link to="/corporate-hub" className="hover:underline" style={{ color: '#8C4A7A' }}>Corporate Hub</Link>
           <span className="mx-2">/</span>
           <span style={{ color: '#565F6E' }}>Wellness Blog</span>
         </nav>
@@ -58,7 +58,7 @@ export default function WellnessPost() {
         </div>
 
         <div className="mt-12 pt-8" style={{ borderTop: '1px solid rgba(16,19,26,0.08)' }}>
-          <Link to="/corporate-hub" className="text-sm font-bold hover:underline" style={{ color: '#2540E8' }}>
+          <Link to="/corporate-hub" className="text-sm font-bold hover:underline" style={{ color: '#6B2D5C' }}>
             &larr; Back to Corporate Hub
           </Link>
         </div>

@@ -18,12 +18,12 @@ export default function News() {
       {/* Hero */}
       <section
         className="py-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, #2540E8, #121E6B)' }}
+        style={{ background: 'linear-gradient(135deg, #6B2D5C, #3B1633)' }}
       >
         <div className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ fontFamily: "'Space Mono', monospace", color: '#A5B4FC', letterSpacing: '2px' }}
+            style={{ fontFamily: "'Space Mono', monospace", color: '#E3C9DB', letterSpacing: '2px' }}
           >
             News
           </p>
@@ -48,14 +48,15 @@ export default function News() {
                   to={`/news/${post.slug}`}
                   className="flex flex-col sm:flex-row gap-6 rounded-2xl overflow-hidden bg-white hover:shadow-md transition-all p-0"
                   style={{ border: '1px solid rgba(16,19,26,0.08)' }}
-                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(37,64,232,0.25)'}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(107,45,92,0.25)'}
                   onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(16,19,26,0.08)'}
                 >
-                  <div className="sm:w-64 shrink-0">
+                  <div className="sm:w-64 sm:h-56 shrink-0 overflow-hidden">
                     <img
                       src={post.coverImage}
                       alt={post.title}
                       className="w-full h-48 sm:h-full object-cover"
+                      style={{ objectPosition: post.coverPosition }}
                     />
                   </div>
                   <div className="p-6 flex flex-col justify-center">
@@ -66,13 +67,13 @@ export default function News() {
                     <h2
                       className="text-xl mb-3 card-heading transition-colors"
                       style={{ color: '#10131A' }}
-                      onMouseEnter={e => (e.currentTarget).style.color = '#2540E8'}
+                      onMouseEnter={e => (e.currentTarget).style.color = '#6B2D5C'}
                       onMouseLeave={e => (e.currentTarget).style.color = '#10131A'}
                     >
                       {post.title}
                     </h2>
                     <p className="text-sm leading-relaxed mb-4" style={{ color: '#565F6E' }}>{post.summary}</p>
-                    <span className="text-sm font-bold" style={{ color: '#2540E8' }}>
+                    <span className="text-sm font-bold" style={{ color: '#6B2D5C' }}>
                       Read more &rarr;
                     </span>
                   </div>

@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import { SHOW_CORPORATE_HUB } from '../../config/features'
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#121E6B' }} className="text-white mt-auto">
+    <footer style={{ background: '#3B1633' }} className="text-white mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -10,24 +11,32 @@ export default function Footer() {
             <div className="flex items-center mb-3">
               <img
                 src={`${import.meta.env.BASE_URL}simunye-logo.png`}
-                alt="Simunye Netball Hub"
-                className="h-10 w-auto object-contain"
-                style={{ filter: 'brightness(0) invert(1)' }}
+                alt="Simunye Netball Community"
+                className="h-12 w-12 rounded-full object-cover"
               />
             </div>
             <p style={{ color: 'rgba(255,255,255,0.72)' }} className="text-sm leading-relaxed max-w-sm">
-              A mixed corporate social netball team in Sandton, Gauteng. We bring professionals together through the sport of netball — no league, no pressure, just community.
+              A community netball team and registered NPO based in Parkmore, Sandton. We bring people together through sport, friendship and a true sense of belonging.
             </p>
             <p className="mt-3 text-xs italic" style={{ color: 'rgba(255,255,255,0.5)' }}>
               "Simunye" — we are one.
             </p>
+            <a
+              href="https://www.instagram.com/simunye_community/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-sm hover:text-white transition-colors"
+              style={{ color: 'rgba(255,255,255,0.72)' }}
+            >
+              Instagram — @simunye_community ↗
+            </a>
           </div>
 
           {/* Explore */}
           <div>
             <h3
               className="text-sm uppercase tracking-wider mb-3 mono"
-              style={{ color: '#FF3E7F', fontFamily: "'Space Mono', monospace", fontSize: '0.7rem' }}
+              style={{ color: '#E0A43A', fontFamily: "'Space Mono', monospace", fontSize: '0.7rem' }}
             >
               Explore
             </h3>
@@ -56,13 +65,13 @@ export default function Footer() {
           <div>
             <h3
               className="text-sm uppercase tracking-wider mb-3 mono"
-              style={{ color: '#FF3E7F', fontFamily: "'Space Mono', monospace", fontSize: '0.7rem' }}
+              style={{ color: '#E0A43A', fontFamily: "'Space Mono', monospace", fontSize: '0.7rem' }}
             >
               Connect
             </h3>
             <ul className="space-y-2">
               {[
-                { to: '/corporate-hub', label: 'Corporate Hub' },
+                ...(SHOW_CORPORATE_HUB ? [{ to: '/corporate-hub', label: 'Corporate Hub' }] : []),
                 { to: '/sponsors', label: 'Sponsors' },
                 { to: '/contact?type=join', label: 'Join the Team' },
                 { to: '/contact?type=sponsor', label: 'Become a Sponsor' },
@@ -87,7 +96,7 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(255,255,255,0.14)' }}
         >
           <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            © {new Date().getFullYear()} Simunye Netball Hub. Sandton, Gauteng.
+            © {new Date().getFullYear()} Simunye Netball Community. Sandton, Gauteng.
           </p>
           <a
             href={`${import.meta.env.BASE_URL}Simunye_Sponsorship_OnePager.pdf`}

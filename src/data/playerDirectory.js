@@ -10,7 +10,7 @@ const playerDirectory = [
     industry: 'Finance',
     position: 'Goal Attack',
     linkedIn: 'https://linkedin.com',
-    avatar: 'https://placehold.co/200x200/2540E8/ffffff?text=TM',
+    avatar: 'https://placehold.co/200x200/6B2D5C/ffffff?text=TM',
     isSample: true,
   },
   {
@@ -21,7 +21,7 @@ const playerDirectory = [
     industry: 'Consulting',
     position: 'Centre',
     linkedIn: 'https://linkedin.com',
-    avatar: 'https://placehold.co/200x200/4E63EE/ffffff?text=SD',
+    avatar: 'https://placehold.co/200x200/8C4A7A/ffffff?text=SD',
     isSample: true,
   },
   {
@@ -32,7 +32,7 @@ const playerDirectory = [
     industry: 'Tech',
     position: 'Wing Defence',
     linkedIn: 'https://linkedin.com',
-    avatar: 'https://placehold.co/200x200/FF3E7F/ffffff?text=PN',
+    avatar: 'https://placehold.co/200x200/E0A43A/ffffff?text=PN',
     isSample: true,
   },
 ]

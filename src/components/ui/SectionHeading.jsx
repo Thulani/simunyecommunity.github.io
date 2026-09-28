@@ -7,14 +7,14 @@ export default function SectionHeading({ eyebrow, title, subtitle, centered = fa
         >
           <span
             className="inline-block shrink-0"
-            style={{ width: '26px', height: '2px', background: '#FF3E7F' }}
+            style={{ width: '26px', height: '2px', background: '#E0A43A' }}
           />
           <p
             style={{
               fontFamily: "'Space Mono', monospace",
               fontSize: '0.74rem',
               letterSpacing: '2px',
-              color: '#2540E8',
+              color: '#6B2D5C',
               textTransform: 'uppercase',
               fontWeight: 700,
               margin: 0,
