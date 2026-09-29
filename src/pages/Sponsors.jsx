@@ -1,32 +1,34 @@
 import SectionHeading from '../components/ui/SectionHeading'
 import Button from '../components/ui/Button'
 import teamStats from '../data/teamStats'
+import IconTile from '../components/ui/IconTile'
+import { Users, Building2, CalendarDays, Star, Handshake, HeartHandshake, Smartphone } from 'lucide-react'
 
 const statCards = [
-  { label: 'Active Players', value: teamStats.activePlayers, icon: '🏃' },
-  { label: 'Companies Represented', value: teamStats.companiesRepresented, icon: '🏢' },
-  { label: 'Sessions / Month', value: teamStats.sessionsPerMonth, icon: '📅' },
-  { label: 'Founded', value: teamStats.founded, icon: '⭐' },
+  { label: 'Active Players', value: teamStats.activePlayers, icon: Users },
+  { label: 'Companies Represented', value: teamStats.companiesRepresented, icon: Building2 },
+  { label: 'Sessions / Month', value: teamStats.sessionsPerMonth, icon: CalendarDays },
+  { label: 'Founded', value: teamStats.founded, icon: Star },
 ]
 
 const valueProps = [
   {
-    icon: '👥',
+    icon: Users,
     title: 'A high-value professional audience',
-    desc: 'Our members are working professionals from across Sandton\'s corporate community — an engaged, active audience that shows up every single week.',
+    desc: 'Our members are working professionals from across Sandton\'s corporate community - an engaged, active audience that shows up every single week.',
   },
   {
-    icon: '🤝',
+    icon: Handshake,
     title: 'Real B2B networking value',
     desc: 'Sponsors interact directly with players and their professional networks through our events, socials, and branded sessions. These are relationships, not impressions.',
   },
   {
-    icon: '🌍',
+    icon: HeartHandshake,
     title: 'Real community impact',
-    desc: 'We\'re a registered NPO that gives back — like our Women\'s Month charity drive for two women\'s shelters. Sponsorship here is visible community investment, not just a logo placement.',
+    desc: 'We\'re a registered NPO that gives back - like our Women\'s Month charity drive for two women\'s shelters. Sponsorship here is visible community investment, not just a logo placement.',
   },
   {
-    icon: '📲',
+    icon: Smartphone,
     title: 'Digital presence',
     desc: 'We actively market our team and build our brand online. Your brand features on this website, on our Instagram, and at our tournaments and events.',
   },
@@ -80,7 +82,7 @@ export default function Sponsors() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {statCards.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl mb-2">{stat.icon}</div>
+                <stat.icon size={28} strokeWidth={1.75} className="mx-auto mb-3" style={{ color: '#E0A43A' }} aria-hidden="true" />
                 <p
                   className="text-3xl sm:text-4xl text-white"
                   style={{ fontFamily: "'Archivo Black', sans-serif" }}
@@ -117,7 +119,7 @@ export default function Sponsors() {
                 onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(107,45,92,0.25)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(16,19,26,0.08)'}
               >
-                <div className="text-3xl mb-4">{item.icon}</div>
+                <IconTile icon={item.icon} className="mb-4" />
                 <h3 className="text-lg mb-3 card-heading" style={{ color: '#10131A' }}>{item.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: '#565F6E' }}>{item.desc}</p>
               </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import SectionHeading from '../components/ui/SectionHeading'
+import { CircleCheck } from 'lucide-react'
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'
 
@@ -68,7 +69,7 @@ export default function Contact() {
     return (
       <main className="min-h-screen flex items-center justify-center px-4 py-24">
         <div className="max-w-md text-center">
-          <div className="text-6xl mb-6">✅</div>
+          <CircleCheck size={64} strokeWidth={1.5} className="mx-auto mb-6" style={{ color: '#6B2D5C' }} aria-hidden="true" />
           <h1 className="text-3xl mb-4" style={{ color: '#10131A' }}>Message sent!</h1>
           <p className="mb-8 leading-relaxed" style={{ color: '#565F6E' }}>
             Thanks for reaching out. We'll get back to you within 48 hours.
@@ -108,7 +109,7 @@ export default function Contact() {
             className="text-lg leading-relaxed"
             style={{ color: 'rgba(255,255,255,0.85)', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}
           >
-            Player enquiries, friendly match requests, sponsorship conversations — all in one place.
+            Player enquiries, friendly match requests, sponsorship conversations - all in one place.
           </p>
         </div>
       </section>
@@ -269,9 +270,9 @@ export default function Contact() {
                 rows={5}
                 placeholder={
                   form.enquiryType === 'join'
-                    ? "Tell us a bit about yourself — your experience level, what brings you to Simunye, and when you're looking to start."
+                    ? "Tell us a bit about yourself - your experience level, what brings you to Simunye, and when you're looking to start."
                     : form.enquiryType === 'friendly'
-                    ? "Tell us about your team — how many players, experience level, and any other details that would help us plan the match."
+                    ? "Tell us about your team - how many players, experience level, and any other details that would help us plan the match."
                     : form.enquiryType === 'sponsor'
                     ? "Tell us about your company and what you're hoping to achieve through the partnership."
                     : "How can we help?"

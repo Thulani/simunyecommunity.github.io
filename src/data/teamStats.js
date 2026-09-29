@@ -1,4 +1,4 @@
-// Figures from the team's Instagram (@simunye_community) and sponsorship proposal — update as the squad grows
+// Figures from the team's Instagram (@simunye_community) and sponsorship proposal - update as the squad grows
 const teamStats = {
   activePlayers: '20+',
   companiesRepresented: 3,

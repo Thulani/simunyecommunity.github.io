@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import SectionHeading from '../components/ui/SectionHeading'
 import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
+import IconTile from '../components/ui/IconTile'
+import { Building2, Handshake, Megaphone } from 'lucide-react'
 import playerDirectory, { industries } from '../data/playerDirectory'
 import wellnessPosts from '../data/wellness'
 
@@ -42,7 +44,7 @@ export default function CorporateHub() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: 'rgba(255,255,255,0.85)', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}
           >
-            Simunye brings together professionals from across Sandton's leading firms. This is the B2B networking that actually works — built on shared experience, not business cards.
+            Simunye brings together professionals from across Sandton's leading firms. This is the B2B networking that actually works - built on shared experience, not business cards.
           </p>
         </div>
       </section>
@@ -53,17 +55,17 @@ export default function CorporateHub() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                icon: '🏢',
+                icon: Building2,
                 title: 'Real professionals',
                 desc: 'Players are active working professionals from Sandton\'s finance, law, tech, and consulting sectors.',
               },
               {
-                icon: '🤝',
+                icon: Handshake,
                 title: 'Genuine connections',
-                desc: 'Shared physical experience builds trust and rapport faster than any networking event — relationships that last beyond the court.',
+                desc: 'Shared physical experience builds trust and rapport faster than any networking event - relationships that last beyond the court.',
               },
               {
-                icon: '📣',
+                icon: Megaphone,
                 title: 'Visible community',
                 desc: 'Our events, socials, and this hub give sponsors and partners direct access to a high-value professional audience.',
               },
@@ -73,7 +75,7 @@ export default function CorporateHub() {
                 className="rounded-2xl bg-white p-7 text-center"
                 style={{ border: '1px solid rgba(16,19,26,0.08)' }}
               >
-                <div className="text-4xl mb-4">{item.icon}</div>
+                <IconTile icon={item.icon} size={56} className="mb-4" />
                 <h3 className="text-lg mb-2 card-heading" style={{ color: '#10131A' }}>{item.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: '#565F6E' }}>{item.desc}</p>
               </div>
@@ -88,7 +90,7 @@ export default function CorporateHub() {
           <SectionHeading
             eyebrow="Player Directory"
             title="Who's on the team."
-            subtitle="Opt-in only — players listed here have explicitly agreed to be included."
+            subtitle="Opt-in only - players listed here have explicitly agreed to be included."
           />
 
           {/* Industry filter */}
@@ -230,7 +232,7 @@ export default function CorporateHub() {
         <div className="max-w-xl mx-auto">
           <h2 className="text-2xl mb-4" style={{ color: '#10131A' }}>Join the network.</h2>
           <p className="mb-6" style={{ color: '#565F6E' }}>
-            Whether you're looking for new professional connections or just a great Wednesday evening — Simunye delivers both.
+            Whether you're looking for new professional connections or just a great Wednesday evening - Simunye delivers both.
           </p>
           <Button to="/contact?type=join" variant="primary" size="lg">
             Register Your Interest

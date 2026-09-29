@@ -36,19 +36,19 @@ const aboutCards = [
   {
     num: 'EVERY WED',
     title: 'Show Up, Every Week',
-    body: 'Wednesday evenings at Parkmore have become more than practice — a space to unwind, recharge, laugh and support each other after the working day.',
+    body: 'Wednesday evenings at Parkmore have become more than practice - a space to unwind, recharge, laugh and support each other after the working day.',
     topColor: '#E0A43A',
   },
   {
     num: 'ALL WELCOME',
     title: 'A True Sense of Belonging',
-    body: 'First time holding a netball or an experienced player looking for a new home — all ages, genders and skill levels have a place here.',
+    body: 'First time holding a netball or an experienced player looking for a new home - all ages, genders and skill levels have a place here.',
     topColor: '#6B2D5C',
   },
   {
     num: 'BEYOND NETBALL',
     title: 'A Lifestyle, Not Just a Team',
-    body: 'Hikes, padel, running and wellness initiatives — because a community that moves together grows together.',
+    body: 'Hikes, padel, running and wellness initiatives - because a community that moves together grows together.',
     topColor: '#10131A',
   },
 ]
@@ -85,11 +85,11 @@ export default function Home() {
               </h1>
 
               <p style={{ marginTop: '8px', fontSize: '0.94rem', color: '#565F6E', fontStyle: 'italic', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}>
-                Simunye — isiZulu for "we are one."
+                Simunye - isiZulu for "we are one."
               </p>
 
               <p style={{ marginTop: '22px', maxWidth: '480px', fontSize: '1.05rem', color: '#565F6E', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0, lineHeight: 1.6 }}>
-                A community netball team bringing together players from across Sandton — all ages, genders and skill levels. Every Wednesday we show up to play, connect, and support one another.
+                A community netball team bringing together players from across Sandton - all ages, genders and skill levels. Every Wednesday we show up to play, connect, and support one another.
               </p>
 
               <div style={{ marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -102,7 +102,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right column — photo stack */}
+            {/* Right column - photo stack */}
             <div>
               <div className="photo-stack">
                 {photoCards.map((card) => (
@@ -216,7 +216,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — sponsor card */}
+            {/* Right - sponsor card */}
             <div style={{ background: '#3B1633', color: '#fff', borderRadius: '16px', padding: '32px' }}>
               <span style={{ fontFamily: "'Space Mono', monospace", color: '#E0A43A', fontSize: '0.76rem', display: 'block', marginBottom: '14px', letterSpacing: '1.5px', fontWeight: 700 }}>
                 SPONSOR PACKAGE
@@ -270,7 +270,7 @@ export default function Home() {
             Come play with us
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.72)', margin: '16px auto 28px', maxWidth: '440px', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}>
-            Whether you want to play, sponsor, or just come watch — there's a place for you in the Simunye family.
+            Whether you want to play, sponsor, or just come watch - there's a place for you in the Simunye family.
           </p>
           <Button to="/contact" variant="accent" size="lg">
             Get In Touch

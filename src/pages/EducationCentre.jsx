@@ -2,11 +2,12 @@ import { useState } from 'react'
 import SectionHeading from '../components/ui/SectionHeading'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { ClipboardList, LayoutGrid, Brain, Dumbbell, Stethoscope } from 'lucide-react'
 
 const sections = [
   {
     id: 'rules',
-    icon: '📋',
+    icon: ClipboardList,
     title: 'Rules & Laws of the Game',
     content: `## The Basics
 
@@ -14,7 +15,7 @@ Netball is a fast-paced team sport played on a rectangular court, divided into t
 
 ### Key Rules
 
-**Footwork:** When you catch the ball, you must land on one foot (the pivot foot) and can move the other — but you cannot drag, re-ground, or jump from the pivot foot while in possession. This is called a footwork violation.
+**Footwork:** When you catch the ball, you must land on one foot (the pivot foot) and can move the other - but you cannot drag, re-ground, or jump from the pivot foot while in possession. This is called a footwork violation.
 
 **Held ball:** You have three seconds to release the ball after catching or receiving it. Holding longer is a "held ball" infringement.
 
@@ -22,7 +23,7 @@ Netball is a fast-paced team sport played on a rectangular court, divided into t
 
 **Contact:** You cannot push, hold, or knock an opponent. Any physical contact that affects the game is penalised.
 
-**Offside:** Each position has a defined zone on the court. Moving outside your zone — even without the ball — is offside.
+**Offside:** Each position has a defined zone on the court. Moving outside your zone - even without the ball - is offside.
 
 ### Penalties
 
@@ -30,11 +31,11 @@ When a rule is broken, the opposing team is awarded a **free pass** from the spo
 
 ### Starting & Restarting Play
 
-The game starts with a **centre pass** — taken by Centre — alternating between teams after each goal. After a goal, the team that was scored against takes the centre pass.`,
+The game starts with a **centre pass** - taken by Centre - alternating between teams after each goal. After a goal, the team that was scored against takes the centre pass.`,
   },
   {
     id: 'positions',
-    icon: '🏃',
+    icon: LayoutGrid,
     title: 'Positions Explained',
     content: `## The Seven Positions
 
@@ -52,25 +53,25 @@ Each of the seven positions has a specific role and a defined area of the court 
 
 ### Tips for New Players
 
-- **GS & GK** have the smallest zones — great for players building court awareness.
-- **Centre** is the most physically demanding position — requiring the most running.
-- **GA & GD** are versatile attacking/defending positions — great for gaining a full picture of the game.
+- **GS & GK** have the smallest zones - great for players building court awareness.
+- **Centre** is the most physically demanding position - requiring the most running.
+- **GA & GD** are versatile attacking/defending positions - great for gaining a full picture of the game.
 - At Simunye, we actively encourage rotating positions so everyone experiences different perspectives on the game.`,
   },
   {
     id: 'tactics',
-    icon: '🧠',
+    icon: Brain,
     title: 'Tactics & Strategies',
     content: `## Attacking Play
 
 ### Creating Space
-The most fundamental attacking principle: if you don't have the ball, your job is to create space — either for yourself or for a teammate. This involves timing runs, changing direction sharply, and reading where the ball is going.
+The most fundamental attacking principle: if you don't have the ball, your job is to create space - either for yourself or for a teammate. This involves timing runs, changing direction sharply, and reading where the ball is going.
 
 ### The Give-and-Go
 A simple but effective move: pass the ball to a teammate, then immediately sprint into space to receive it back. This exploits defensive players who ball-watch.
 
 ### Working the Circle
-Goal Attack and Goal Shooter need to create and protect space in the shooting circle. Screens (within the rules — no contact), timing, and reading the play are key.
+Goal Attack and Goal Shooter need to create and protect space in the shooting circle. Screens (within the rules - no contact), timing, and reading the play are key.
 
 ## Defensive Play
 
@@ -81,7 +82,7 @@ Each defender is assigned to an opposing player. The goal is to prevent that pla
 Rather than following individual players, defenders cover zones of the court. More complex but can disrupt patterned attacking play.
 
 ### Forcing Errors
-Applying legal pressure at 0.9m — arms up, body low, staying legal — forces attackers to rush their passes and decisions. Turnovers often come from patience, not aggression.
+Applying legal pressure at 0.9m - arms up, body low, staying legal - forces attackers to rush their passes and decisions. Turnovers often come from patience, not aggression.
 
 ## General Principles
 
@@ -91,11 +92,11 @@ Applying legal pressure at 0.9m — arms up, body low, staying legal — forces 
   },
   {
     id: 'fitness',
-    icon: '💪',
+    icon: Dumbbell,
     title: 'Fitness & Drills',
     content: `## What Netball Fitness Looks Like
 
-Netball is an intermittent sport — short bursts of sprint, change of direction, jump, and stop, repeated throughout a 60-minute game. The fitness demands are quite different from distance running or weight training.
+Netball is an intermittent sport - short bursts of sprint, change of direction, jump, and stop, repeated throughout a 60-minute game. The fitness demands are quite different from distance running or weight training.
 
 ### Key Fitness Components
 
@@ -103,7 +104,7 @@ Netball is an intermittent sport — short bursts of sprint, change of direction
 
 **Speed off the mark:** Netball rewards short, explosive acceleration over sustained pace. Box jump variations and short sprint work help here.
 
-**Jump height & landing:** Shooting and defending both involve jumping. Plyometric training — squat jumps, broad jumps — develops this, and safe landing mechanics protect your ankles and knees.
+**Jump height & landing:** Shooting and defending both involve jumping. Plyometric training - squat jumps, broad jumps - develops this, and safe landing mechanics protect your ankles and knees.
 
 **Aerobic base:** Sustained fitness across a match requires a solid aerobic foundation. Interval running (e.g., 30 seconds on, 30 seconds off) mirrors the demands of the sport better than steady-state running.
 
@@ -113,31 +114,31 @@ Netball is an intermittent sport — short bursts of sprint, change of direction
 Three players form a triangle about 3m apart. Pass the ball around the triangle as fast as possible, moving clockwise. After 30 seconds, switch direction. Focus on flat, accurate passes and quick footwork.
 
 ### Star Footwork
-One player in the centre, five cones around them like a star at 2m distance. Sprint to each cone and back in sequence — both clockwise and anti-clockwise. Develops the quick direction changes common in match play.
+One player in the centre, five cones around them like a star at 2m distance. Sprint to each cone and back in sequence - both clockwise and anti-clockwise. Develops the quick direction changes common in match play.
 
 ### Shooting Under Pressure
 Shooter takes a shot; if they score, they take a step back. If they miss, they take a step forward. Aim to get as far from the post as possible. Builds shooting accuracy and nerve.`,
   },
   {
     id: 'injury',
-    icon: '🩺',
+    icon: Stethoscope,
     title: 'Injury Prevention & Wellness',
     content: `## The Most Common Netball Injuries
 
 Understanding what tends to go wrong helps you prevent it.
 
-**Ankle sprains** are the most common netball injury — caused by landing awkwardly or changing direction on uneven ground. Strengthening the muscles around your ankle and always warming up properly reduces risk significantly.
+**Ankle sprains** are the most common netball injury - caused by landing awkwardly or changing direction on uneven ground. Strengthening the muscles around your ankle and always warming up properly reduces risk significantly.
 
-**Knee injuries** — particularly ACL and meniscal injuries — can occur from high-impact landings or twisting while bearing weight. Strong quads and hamstrings, and proper landing mechanics (land on both feet, absorb through your knees and hips) are protective.
+**Knee injuries** - particularly ACL and meniscal injuries - can occur from high-impact landings or twisting while bearing weight. Strong quads and hamstrings, and proper landing mechanics (land on both feet, absorb through your knees and hips) are protective.
 
-**Finger injuries** — fractures and dislocations from catching bad passes. Use proper catching technique: fingers spread, hands form a "W" or "basket" shape to receive the ball.
+**Finger injuries** - fractures and dislocations from catching bad passes. Use proper catching technique: fingers spread, hands form a "W" or "basket" shape to receive the ball.
 
 ## Warm-Up Protocol (10 minutes)
 
-1. **Light jog around the court** — 2 minutes
-2. **Dynamic stretches** — leg swings, arm circles, hip circles — 3 minutes
-3. **Agility work** — side shuffles, high knees, lateral bounds — 2 minutes
-4. **Sport-specific movements** — catching drills, short sprints — 3 minutes
+1. **Light jog around the court** - 2 minutes
+2. **Dynamic stretches** - leg swings, arm circles, hip circles - 3 minutes
+3. **Agility work** - side shuffles, high knees, lateral bounds - 2 minutes
+4. **Sport-specific movements** - catching drills, short sprints - 3 minutes
 
 Never skip the warm-up. Cold muscles and joints are significantly more injury-prone.
 
@@ -154,7 +155,7 @@ Drink water. Your calves and feet did a lot of work.
 
 ## When to See a Physio
 
-Don't tough out persistent pain. Rule of thumb: if something hurts for more than 48 hours after activity, or the pain is sharp rather than muscular soreness — see a physiotherapist. Injuries caught early are dramatically easier to treat.`,
+Don't tough out persistent pain. Rule of thumb: if something hurts for more than 48 hours after activity, or the pain is sharp rather than muscular soreness - see a physiotherapist. Injuries caught early are dramatically easier to treat.`,
   },
 ]
 
@@ -183,7 +184,7 @@ export default function EducationCentre() {
             className="text-lg leading-relaxed"
             style={{ color: 'rgba(255,255,255,0.85)', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}
           >
-            Everything you need to know about netball — whether you've never played or just want to sharpen your knowledge.
+            Everything you need to know about netball - whether you've never played or just want to sharpen your knowledge.
           </p>
         </div>
       </section>
@@ -212,7 +213,7 @@ export default function EducationCentre() {
                     if (active !== section.id) (e.currentTarget).style.background = 'transparent'
                   }}
                 >
-                  <span className="text-lg">{section.icon}</span>
+                  <section.icon size={18} strokeWidth={1.75} className="shrink-0" aria-hidden="true" />
                   {section.title}
                 </button>
               ))}

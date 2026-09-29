@@ -1,4 +1,4 @@
-// Sample wellness/corporate blog posts — clearly marked as placeholder content
+// Sample wellness/corporate blog posts - clearly marked as placeholder content
 // TODO: Replace with real posts before launch
 
 const wellnessPosts = [
@@ -11,7 +11,7 @@ const wellnessPosts = [
     isSample: true,
     content: `## The Problem with Formal Networking
 
-Raise your hand if you actually enjoy formal networking events. Standing in a room with strangers, business cards in hand, trying to engineer a "natural" conversation about synergies while balancing a glass of wine — it's contrived, it's exhausting, and research consistently shows it produces shallow connections at best.
+Raise your hand if you actually enjoy formal networking events. Standing in a room with strangers, business cards in hand, trying to engineer a "natural" conversation about synergies while balancing a glass of wine - it's contrived, it's exhausting, and research consistently shows it produces shallow connections at best.
 
 Sport is different.
 
@@ -19,7 +19,7 @@ Sport is different.
 
 When you share a court with someone for 90 minutes, something interesting happens. You see them make decisions under pressure. You see them communicate in the moment, adapt when a play goes wrong, encourage a teammate who's struggling. You see, in short, a much fuller picture of who someone is than any business card can convey.
 
-And the connection you form through shared experience — especially shared physical effort — is qualitatively different from the connection formed through a polite exchange at a conference.
+And the connection you form through shared experience - especially shared physical effort - is qualitatively different from the connection formed through a polite exchange at a conference.
 
 ## The Sandton Context
 
@@ -40,12 +40,12 @@ The court is the icebreaker. The relationship is what you build after.
     slug: 'the-corporate-athletes-guide-to-recovery',
     title: 'The Corporate Athlete\'s Guide to Recovery',
     date: '2026-05-28',
-    summary: 'You train hard and work hard. Recovery is the part most professionals skip — and the part that determines how much you get from both. A practical guide for busy professionals.',
+    summary: 'You train hard and work hard. Recovery is the part most professionals skip - and the part that determines how much you get from both. A practical guide for busy professionals.',
     coverImage: 'https://placehold.co/800x400/8C4A7A/ffffff?text=Recovery+Guide',
     isSample: true,
     content: `## The Part Nobody Talks About
 
-You've committed to showing up every Saturday morning. You're doing the clinics. You're eating well during the week. But if you're like most corporate professionals balancing long hours, commutes, family, and social obligations — recovery is an afterthought.
+You've committed to showing up every Saturday morning. You're doing the clinics. You're eating well during the week. But if you're like most corporate professionals balancing long hours, commutes, family, and social obligations - recovery is an afterthought.
 
 It shouldn't be. Recovery is where adaptation happens. It's where the benefit of training is actually realised. Skip it, and you'll plateau, pick up niggles, and eventually burn out.
 
@@ -53,7 +53,7 @@ Here's what actually works for busy people.
 
 ## Sleep: The Non-Negotiable
 
-No supplement, no recovery tool, and no amount of protein shakes will compensate for chronic under-sleep. If you're playing sport seriously (even socially), you need seven to nine hours — not as a luxury, but as a training requirement.
+No supplement, no recovery tool, and no amount of protein shakes will compensate for chronic under-sleep. If you're playing sport seriously (even socially), you need seven to nine hours - not as a luxury, but as a training requirement.
 
 Practical tip: Set a wind-down alarm 45 minutes before you want to be asleep, not at the time you want to be asleep. Screen time suppresses melatonin; the buffer gives it time to recover.
 

@@ -99,7 +99,7 @@ h1, h2, h3 {
 .prose th { background: var(--surface-tint); padding: 0.5rem 0.75rem; text-align: left; font-weight: 600; font-size: 0.875rem; border: 1px solid rgba(16,19,26,0.1); }
 .prose td { padding: 0.5rem 0.75rem; font-size: 0.875rem; border: 1px solid rgba(16,19,26,0.08); }
 
-/* Card heading reset — Archivo Black can be too loud in cards */
+/* Card heading reset - Archivo Black can be too loud in cards */
 .card-heading {
   font-family: 'Inter', sans-serif;
   text-transform: none;

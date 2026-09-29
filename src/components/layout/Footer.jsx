@@ -19,7 +19,7 @@ export default function Footer() {
               A community netball team and registered NPO based in Parkmore, Sandton. We bring people together through sport, friendship and a true sense of belonging.
             </p>
             <p className="mt-3 text-xs italic" style={{ color: 'rgba(255,255,255,0.5)' }}>
-              "Simunye" — we are one.
+              "Simunye" - we are one.
             </p>
             <a
               href="https://www.instagram.com/simunye_community/"
@@ -28,7 +28,7 @@ export default function Footer() {
               className="inline-block mt-4 text-sm hover:text-white transition-colors"
               style={{ color: 'rgba(255,255,255,0.72)' }}
             >
-              Instagram — @simunye_community ↗
+              Instagram - @simunye_community ↗
             </a>
           </div>
 

@@ -1,6 +1,7 @@
 import SectionHeading from '../components/ui/SectionHeading'
 import Badge from '../components/ui/Badge'
 import events from '../data/events'
+import { MapPin } from 'lucide-react'
 
 function isPast(dateStr) {
   return new Date(dateStr) < new Date()
@@ -51,7 +52,7 @@ export default function Schedule() {
             className="text-lg leading-relaxed"
             style={{ color: 'rgba(255,255,255,0.85)', fontFamily: "'Inter', sans-serif", fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}
           >
-            Wednesday training, tournaments, and the adventures in between — all in one place.
+            Wednesday training, tournaments, and the adventures in between - all in one place.
           </p>
         </div>
       </section>
@@ -67,7 +68,7 @@ export default function Schedule() {
 
           {upcomingEvents.length === 0 ? (
             <div className="text-center py-12" style={{ color: '#565F6E' }}>
-              <p className="text-lg">No upcoming events yet — check back soon.</p>
+              <p className="text-lg">No upcoming events yet - check back soon.</p>
             </div>
           ) : (
             <div className="space-y-4">
@@ -90,7 +91,7 @@ export default function Schedule() {
                   </div>
                   <h3 className="text-lg mb-1 card-heading" style={{ color: '#10131A' }}>{event.title}</h3>
                   <p className="text-sm mb-2 flex items-center gap-1" style={{ color: '#565F6E' }}>
-                    <span>📍</span> {event.venue}
+                    <MapPin size={14} className="shrink-0" aria-hidden="true" /> {event.venue}
                   </p>
                   <p className="text-sm leading-relaxed" style={{ color: '#565F6E' }}>{event.description}</p>
                 </div>
@@ -119,7 +120,7 @@ export default function Schedule() {
                     </div>
                     <span className="text-xs" style={{ color: '#565F6E' }}>{formatDate(event.date)}</span>
                   </div>
-                  <p className="text-xs mt-1" style={{ color: '#565F6E' }}>📍 {event.venue}</p>
+                  <p className="text-xs mt-1 flex items-center gap-1" style={{ color: '#565F6E' }}><MapPin size={12} className="shrink-0" aria-hidden="true" /> {event.venue}</p>
                 </div>
               ))}
             </div>
